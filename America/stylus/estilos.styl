@@ -1,5 +1,15 @@
+@import "nib"
 @import "normalize.styl"
 @import "fonts.styl"
+
+vendor-prefixes = webkit o ms moz official
+/*animacion(parametro)
+	-webkit-animation parametro
+	-moz-animation parametro
+	-o-animation parametro
+	-ms-animation parametro
+	-webkit-animation parametro
+*/
 
 gris_oscuro = #333333
 gris_claro = #818181
@@ -101,6 +111,8 @@ ul
 		height 5px
 		width 30%
 		position relative
+		//animacion(1s state infinite)
+		animation 20s state infinite linear
 	.circle
 		background gris_oscuro
 		border-radius 50%
@@ -109,6 +121,21 @@ ul
 		position absolute
 		right 0
 		top -2px
+		//animacion(1s circle infinite)
+		animation 1s circle infinite
+
+@keyframes state
+	from
+		width 0
+	to
+		width 100%
+
+@keyframes circle
+	0%
+		transform scale(1)
+	100%
+		transform scale(2)
+		opacity 0
 
 .header
 	height 3.5rem

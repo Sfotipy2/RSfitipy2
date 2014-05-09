@@ -1,3 +1,5 @@
 stylus -c -w -o css/ stylus/estilos.styl
+npm install nib -g
+stylus -u nib -c -w -o css/ stylus/estilos.styl
 
 http://icomoon.io/app/#/select
