@@ -19,10 +19,6 @@
 						<img src="img/avatares/leonidas.jpg" alt="alguien" width="38" height="38">
 					</figure>
 					<span class="left username">@njnlnlnlvhvhvhvh</span>
-					
-
-
-				
 				</div>
 
 				<div class="search right">
@@ -33,9 +29,8 @@
 					</form>
 				</div>				
 			</div>
-			
-			
 		</div>
+
 		<a class="button-menu icon-menu"></a>
 		<nav class="menu">
 			<ul class="list center-block wrap">
@@ -86,14 +81,15 @@
 					</p>
 				</div>
 				<div class="play center-text padding-tb">
-					<a class="action gray icon-prev"></a>
-					<a class="action gray icon-play"></a>
-					<a class="action gray icon-next"></a>
+					<a id="prev" class="action gray icon-prev"></a>
+					<a id="play" class="action gray icon-play"></a>
+					<a id="next" class="action gray icon-next"></a>
 					<a class="action gray icon-random"></a>
 					<a class="action gray icon-vol"></a>
 				</div>
 			</div>			
 		</div>
+		<!--LISTA DE CANCIONES CLASE 3-->
 		<div class="playlist right">
 			<p class="name">Girl</p>
 			<p class="author">Pharrell Williams</p>
@@ -182,6 +178,7 @@
 		</div>
 	</section>
 
+	<!--LISTA DE LA CALSE 3-->
 	<section class="container">
 		<article class="song">
 			<figure class="imege">
@@ -337,5 +334,32 @@
 			</p>
 		</article>
 	</section>
+
+	<!--CLASE 4-->
+	<!-- <section id="list" class="container">
+		<script id="song-tmpl" type="html/x-handlebars">
+			{{#each songs}}
+			<article class="song" data-id="{{@index}}">
+				<figure class="image">
+					<img src="{{img}}" width="128" height="128" title="{{artist}}" />
+				</figure>
+				<p class="name">
+					{{name}}
+				</p>
+				<p class="author">
+					{{artist}}
+				</p>
+			</article>
+			{{/each}}			
+		</script>
+	</section>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/lib/handlebars.js"></script>
+	<script src="js/lib/observable.js"></script>
+	<script src="js/player-mvc.js"></script> -->
+
+	<script type="text/javascript" src="lib/underscore.js"></script>
+	<script type="text/javascript" src="lib/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="lib/backbone.js"></script>
 </body>
 </html>
